@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        function mudarTexto(){
+            const titulo = document.getElementById('subtitulo')
+            titulo.innerText = "Você clicou!"
+        } 
+        let nome = prompt('Qual o seu nome?');
+        alert("Olá meu caro " + nome + "!")
+
+            function mudarCor(){
+            botao.style.backgroundColor = "cyan"
+        } 
+            function mudarCor2(){
+            botao.style.backgroundColor = "white"
+        }         
+    </script>
+        <button onclick = 'mudarCor()'>Mude a cor</button>
+        <button onclick = 'mudarCor2()'>Mude a cor de novo</button>
+    <div id="botao">
+        <h2>Ola seja <span>bem-vindo</span></h2>
+        <h2 id="subtitulo"><span>osidguihiughijgoiehoijooijhoke</span></h2>
+         <button class="botao2" onclick = 'mudarTexto()'>Clique em mim</button>
+    </div>
+</body>
+</html>
